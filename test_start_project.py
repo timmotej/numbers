@@ -6,7 +6,8 @@ net = input("Give here network name, e.g. empty -> produces 'empty_net':\n")
 network = f"{net}_net"
 
 dict_options = {
-    "empty": f" -it --net={network} -e UNAME=tom -e GNAME=mygroup ",
+    #"empty": f" -it --net={network} -e UNAME=tom -e GNAME=mygroup ",
+    "empty": f" -it --net={network} ",
 }
 
 commands = {
