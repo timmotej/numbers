@@ -13,7 +13,7 @@ RUN set -x && \
     addgroup -g $GID -S $GNAME && \
     adduser -S -D -H -u $UID -h $HOME -s /sbin/nologin -G $GNAME -g $GNAME $UNAME && \
     apk add --no-cache sudo && \
-    echo "$APPUSER ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers && \
+    echo "$UNAME ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers && \
     ls -las /usr/src && \
     touch /usr/src/results && \
     chown $UID:$GID /usr/src/results && \
